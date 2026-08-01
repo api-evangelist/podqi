@@ -1,7 +1,30 @@
 aid: podqi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/podqi.png
 name: Podqi
-description: Podqi is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Podqi is an AI-native intellectual property and brand protection platform that
+  automatically detects and removes brand infringements across digital
+  platforms. It scans major marketplaces, storefronts, and domains for
+  counterfeit listings, stolen imagery, fake products, and copycat sites, then
+  packages evidence and files takedowns at scale with minimal human
+  intervention. The company reports roughly 95% AI automation with same-day
+  detection and an average resolution time of about 1.2 days, and also operates
+  Brandsweep.ai, a free public brand-protection scanning tool. Podqi serves
+  brand owners, entertainment and creative companies, e-commerce sellers, and
+  law firms. It was surfaced as a portfolio company of General Catalyst and
+  added to the API Evangelist network; as of this enrichment pass Podqi
+  publishes no public API, developer documentation, or SDK surface.
 url: https://raw.githubusercontent.com/api-evangelist/podqi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Brand Protection
+- Intellectual Property
+- Anti-Counterfeiting
+- Artificial Intelligence
+- Trust and Safety
+- E-commerce
+- Content Enforcement
 apis: []
+common:
+- type: DomainSecurity
+  url: security/podqi-domain-security.yml
+- type: Website
+  url: https://podqi.com
+- type: Blog
+  url: https://podqi.com/blog
+- type: Support
+  url: https://podqi.com/contact
+- type: PrivacyPolicy
+  url: https://podqi.com/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
